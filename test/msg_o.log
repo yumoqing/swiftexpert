@@ -1,0 +1,361 @@
+unpack ---- /home/ymq/pydev/swiftexpert/swiftexpert/msgs/O/MT30002019050600661325.txt
+O MT300
+['block', 'b1', 1, '1!a2!n12!c4!n6!n', 'app_identifier,du_identifier,local_addr,session_id,series_id'] lifo= name=Specification type=container curobj=(b1,block)
+['endblock', None, None, None, None] lifo= None curobj=(Specification,container)
+['block', 'b2', 2, '1!a3!n4!n6!n12!c4!n6!n6!n4!n1!a', 'direction,msgtype,i_time,i_date,remote_addr,session_id,series_id,o_date,o_time,priority'] lifo= name=Specification type=container curobj=(b2,block)
+['endblock', None, None, None, None] lifo= None curobj=(Specification,container)
+['block', 'b3', 3, None, None] lifo= name=Specification type=container curobj=(b3,block)
+['O', 113, 'BankPrevilleage', '4n', None] lifo= name=Specification type=container curobj=(b3,block)
+['O', 108, 'UserReference', '24n', None] lifo= name=Specification type=container curobj=(b3,block)
+['endblock', None, None, None, None] lifo= None curobj=(Specification,container)
+['block', 'b4', 4, None, None] lifo= name=Specification type=container curobj=(b4,block)
+['endblock', None, None, None, None] lifo= None curobj=(Specification,container)
+['block', 'b5', 5, None, None] lifo= name=Specification type=container curobj=(b5,block)
+['O', 'CHK', 'checksum of message', '16c', None] lifo= name=Specification type=container curobj=(b5,block)
+['endblock', None, None, None, None] lifo= None curobj=(Specification,container)
+ignore... ['\ufeff', None, None, None, None]
+ignore... ['Status', 'Tag', 'Field Name', 'Content/Options', 'No.']
+['Mandatory Sequence A General Information', None, None, None, None] lifo= name=b4 type=block curobj=(seg_a,segment)
+['M', '15A', 'New Sequence', 'Empty field', '\xa01'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['M', 20, "Sender's Reference", '16x', '\xa02'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', 21, 'Related Reference', '16x', '\xa03'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['M', '22A', 'Type of Operation', '4!c', '\xa04'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '94A', 'Scope of Operation', '4!c', '\xa05'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['M', '22C', 'Common Reference', '4!a2!c4!n4!a2!c', '\xa06'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '17T', 'Block Trade Indicator', '1!a', '\xa07'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '17U', 'Split Settlement Indicator', '1!a', '\xa08'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '17I', 'Payment versus Payment Settlement Indicator', '1!a', '\xa09'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['M', '82a', 'Party A', 'A or J', '\xa010'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['M', '87a', 'Party B', 'A or J', '\xa011'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '83a', 'Fund or Beneficiary Customer', 'A or J', '\xa012'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '77H', 'Type, Date, Version of the Agreement', '6a[/8!n][//4!n]', '\xa013'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '77D', 'Terms and Conditions', '6*35x', '\xa014'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '14C', 'Year of Definitions', '4!n', '\xa015'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '17F', 'Non-Deliverable Indicator', '1!a', '\xa016'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '17O', 'NDF Open Indicator', '1!a', '\xa017'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '32E', 'Settlement Currency', '3!a', '\xa018'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '30U', 'Valuation Date', '8!n', '\xa019'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['----->', None, None, None, None] lifo= name=seg_a type=segment curobj=(seg_a0,segment)
+['O', '14S', 'Settlement Rate Source', '3!a2n[/4!n/4!c]', '\xa020'] lifo= name=seg_a type=segment curobj=(seg_a0,segment)
+['-----|', None, None, None, None] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '21A', 'Reference to Opening Confirmation', '16x', '\xa021'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['O', '14E', 'Clearing or Settlement Session', '35x', '\xa022'] lifo= name=b4 type=block curobj=(seg_a,segment)
+['End of Sequence A General Information', None, None, None, None] lifo= None curobj=(b4,block)
+['Mandatory Sequence B Transaction Details', None, None, None, None] lifo= name=b4 type=block curobj=(seg_b,segment)
+['M', '15B', 'New Sequence', 'Empty field', '\xa023'] lifo= name=b4 type=block curobj=(seg_b,segment)
+['M', '30T', 'Trade Date', '8!n', '\xa024'] lifo= name=b4 type=block curobj=(seg_b,segment)
+['M', '30V', 'Value Date', '8!n', '\xa025'] lifo= name=b4 type=block curobj=(seg_b,segment)
+['M', 36, 'Exchange Rate', '12d', '\xa026'] lifo= name=b4 type=block curobj=(seg_b,segment)
+['O', '39M', 'Payment Clearing Centre', '2!a', '\xa027'] lifo= name=b4 type=block curobj=(seg_b,segment)
+['Mandatory Subsequence B1 Amount Bought', None, None, None, None] lifo= name=seg_b type=segment curobj=(seg_b0,segment)
+['M', '32B', 'Currency, Amount', '3!a15d', '\xa028'] lifo= name=seg_b type=segment curobj=(seg_b0,segment)
+['O', '53a', 'Delivery Agent', 'A or J', '\xa029'] lifo= name=seg_b type=segment curobj=(seg_b0,segment)
+['O', '56a', 'Intermediary', 'A or J', '\xa030'] lifo= name=seg_b type=segment curobj=(seg_b0,segment)
+['M', '57a', 'Receiving Agent', 'A or J', '\xa031'] lifo= name=seg_b type=segment curobj=(seg_b0,segment)
+['End of Subsequence B1 Amount Bought', None, None, None, None] lifo= name=b4 type=block curobj=(seg_b,segment)
+['Mandatory Subsequence B2 Amount Sold', None, None, None, None] lifo= name=seg_b type=segment curobj=(seg_b1,segment)
+['M', '33B', 'Currency, Amount', '3!a15d', '\xa032'] lifo= name=seg_b type=segment curobj=(seg_b1,segment)
+['O', '53a', 'Delivery Agent', 'A or J', '\xa033'] lifo= name=seg_b type=segment curobj=(seg_b1,segment)
+['O', '56a', 'Intermediary', 'A or J', '\xa034'] lifo= name=seg_b type=segment curobj=(seg_b1,segment)
+['M', '57a', 'Receiving Agent', 'A or J', '\xa035'] lifo= name=seg_b type=segment curobj=(seg_b1,segment)
+['O', '58a', 'Beneficiary Institution', 'A or J', '\xa036'] lifo= name=seg_b type=segment curobj=(seg_b1,segment)
+['End of Subsequence B2 Amount Sold', None, None, None, None] lifo= name=b4 type=block curobj=(seg_b,segment)
+['End of Sequence B Transaction Details', None, None, None, None] lifo= None curobj=(b4,block)
+['Optional Sequence C Optional General Information', None, None, None, None] lifo= name=b4 type=block curobj=(seg_c,segment)
+['M', '15C', 'New Sequence', 'Empty field', '\xa037'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', '29A', 'Contact Information', '4*35x', '\xa038'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', '24D', 'Dealing Method', '4!c[/35x]', '\xa039'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', '84a', 'Dealing Branch Party A', 'A, B, D, or J', '\xa040'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', '85a', 'Dealing Branch Party B', 'A, B, D, or J', '\xa041'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', '88a', 'Broker Identification', 'A, D, or J', '\xa042'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', '71F', "Broker's Commission", '3!a15d', '\xa043'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', '26H', "Counterparty's Reference", '16x', '\xa044'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', '21G', "Broker's Reference", '16x', '\xa045'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['O', 72, 'Sender to Receiver Information', '6*35x', '\xa046'] lifo= name=b4 type=block curobj=(seg_c,segment)
+['End of Sequence C Optional General Information', None, None, None, None] lifo= None curobj=(b4,block)
+['Optional Sequence D Split Settlement Details', None, None, None, None] lifo= name=b4 type=block curobj=(seg_d,segment)
+['M', '15D', 'New Sequence', 'Empty field', '\xa047'] lifo= name=b4 type=block curobj=(seg_d,segment)
+['----->', None, None, None, None] lifo= name=seg_d type=segment curobj=(seg_d0,segment)
+['M', '17A', 'Buy (Sell) Indicator', '1!a', '\xa048'] lifo= name=seg_d type=segment curobj=(seg_d0,segment)
+['M', '32B', 'Currency, Amount', '3!a15d', '\xa049'] lifo= name=seg_d type=segment curobj=(seg_d0,segment)
+['O', '53a', 'Delivery Agent', 'A, D, or J', '\xa050'] lifo= name=seg_d type=segment curobj=(seg_d0,segment)
+['O', '56a', 'Intermediary', 'A, D, or J', '\xa051'] lifo= name=seg_d type=segment curobj=(seg_d0,segment)
+['M', '57a', 'Receiving Agent', 'A, D, or J', '\xa052'] lifo= name=seg_d type=segment curobj=(seg_d0,segment)
+['O', '58a', 'Beneficiary Institution', 'A, D, or J', '\xa053'] lifo= name=seg_d type=segment curobj=(seg_d0,segment)
+['-----|', None, None, None, None] lifo= name=b4 type=block curobj=(seg_d,segment)
+['M', '16A', 'Number of Settlements', '5n', '\xa054'] lifo= name=b4 type=block curobj=(seg_d,segment)
+['End of Sequence D Split Settlement Details', None, None, None, None] lifo= None curobj=(b4,block)
+['Optional Sequence E Reporting Information', None, None, None, None] lifo= name=b4 type=block curobj=(seg_e,segment)
+['M', '15E', 'New Sequence', 'Empty field', '\xa055'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['-----> Optional Repetitive Subsequence E1 Reporting Parties', None, None, None, None] lifo= name=seg_e type=segment curobj=(seg_e0,segment)
+['M', '22L', 'Reporting Jurisdiction', '35x', '\xa056'] lifo= name=seg_e type=segment curobj=(seg_e0,segment)
+['O', '91a', 'Reporting Party', 'A, D, or J', '\xa057'] lifo= name=seg_e type=segment curobj=(seg_e0,segment)
+['-----> Optional Repetitive Subsequence E1a Unique Transaction Identifier', None, None, None, None] lifo= name=seg_e0 type=segment curobj=(seg_e0a,segment)
+['M', '22M', 'UTI Namespace/Issuer Code', '30x', '\xa058'] lifo= name=seg_e0 type=segment curobj=(seg_e0a,segment)
+['M', '22N', 'Transaction Identifier', '32x', '\xa059'] lifo= name=seg_e0 type=segment curobj=(seg_e0a,segment)
+['-----> Optional Repetitive Subsequence E1a1 Prior Unique Transaction Identifier', None, None, None, None] lifo= name=seg_e0a type=segment curobj=(seg_e0a0,segment)
+['M', '22P', 'PUTI Namespace/Issuer Code', '30x', '\xa060'] lifo= name=seg_e0a type=segment curobj=(seg_e0a0,segment)
+['M', '22R', 'Prior Transaction Identifier', '32x', '\xa061'] lifo= name=seg_e0a type=segment curobj=(seg_e0a0,segment)
+['-----| End of Subsequence E1a1 Prior Unique Transaction Identifier', None, None, None, None] lifo= name=seg_e0 type=segment curobj=(seg_e0a,segment)
+['-----| End of Subsequence E1a Unique Transaction Identifier', None, None, None, None] lifo= name=seg_e type=segment curobj=(seg_e0,segment)
+['-----| End of Subsequence E1 Reporting Parties', None, None, None, None] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '81a', 'Central Counterparty Clearing House (CCP)', 'A, D, or J', '\xa062'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '89a', 'Clearing Broker', 'A, D, or J', '\xa063'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '96a', 'Clearing Exception Party', 'A, D, or J', '\xa064'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['----->', None, None, None, None] lifo= name=seg_e type=segment curobj=(seg_e1,segment)
+['O', '22S', 'Clearing Broker Identification', '1!a/35x', '\xa065'] lifo= name=seg_e type=segment curobj=(seg_e1,segment)
+['-----|', None, None, None, None] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '22T', 'Cleared Product Identification', '35x', '\xa066'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17E', 'Clearing Threshold Indicator', '1!a', '\xa067'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '22U', 'Underlying Product Identifier', '6a', '\xa068'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '35B', 'Identification of Financial Instrument', '[ISIN1!e12!c]', '\xa069'] lifo= name=b4 type=block curobj=(seg_e,segment)
+[None, None, None, '[4*35x]', None] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17H', 'Allocation Indicator', '1!a', '\xa070'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17P', 'Collateralisation Indicator', '1!a', '\xa071'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '22V', 'Execution Venue', '35x', '\xa072'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '98D', 'Execution Timestamp', '8!n6!n[,3n][/[N]2!n[2!n]]', '\xa073'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17W', 'Non Standard Flag', '1!a', '\xa074'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '22W', 'Link Swap Identification', '42x', '\xa075'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17Y', 'Financial Nature of the Counterparty Indicator', '1!a', '\xa076'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17Z', 'Collateral Portfolio Indicator', '1!a', '\xa077'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '22Q', 'Collateral Portfolio Code', '10x', '\xa078'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17L', 'Portfolio Compression Indicator', '1!a', '\xa079'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17M', 'Corporate Sector Indicator', '1!a', '\xa080'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17Q', 'Trade with Non-EEA Counterparty Indicator', '1!a', '\xa081'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17S', 'Intragroup Trade Indicator', '1!a', '\xa082'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '17X', 'Commercial or Treasury Financing Indicator', '1!a', '\xa083'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '98G', 'Confirmation Timestamp', '8!n6!n[,3n][/[N]2!n[2!n]]', '\xa084'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '98H', 'Clearing Timestamp', '6!n[,3n][/[N]2!n[2!n]]', '\xa085'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['----->', None, None, None, None] lifo= name=seg_e type=segment curobj=(seg_e2,segment)
+['O', '34C', 'Commission and Fees', '4!c/[N]3!a15d', '\xa086'] lifo= name=seg_e type=segment curobj=(seg_e2,segment)
+['-----|', None, None, None, None] lifo= name=b4 type=block curobj=(seg_e,segment)
+['O', '77A', 'Additional Reporting Information', '20*35x', '\xa087'] lifo= name=b4 type=block curobj=(seg_e,segment)
+['End of Sequence E Reporting Information', None, None, None, None] lifo= None curobj=(b4,block)
+['Optional Sequence F Post-Trade Events', None, None, None, None] lifo= name=b4 type=block curobj=(seg_f,segment)
+['M', '15F', 'New Sequence', 'Empty field', '\xa088'] lifo= name=b4 type=block curobj=(seg_f,segment)
+['M', '21H', 'Event Type and Reference', '4!c/16x', '\xa089'] lifo= name=b4 type=block curobj=(seg_f,segment)
+['O', '21F', 'Underlying Liability Reference', '16x', '\xa090'] lifo= name=b4 type=block curobj=(seg_f,segment)
+['O', '30F', 'Profit and Loss Settlement Date', '8!n', '\xa091'] lifo= name=b4 type=block curobj=(seg_f,segment)
+['O', '32H', 'Profit and Loss Settlement Amount', '[N]3!a15d', '\xa092'] lifo= name=b4 type=block curobj=(seg_f,segment)
+['O', '33E', 'Outstanding Settlement Amount', '3!a15d', '\xa093'] lifo= name=b4 type=block curobj=(seg_f,segment)
+['End of Sequence F Post-Trade Events', None, None, None, None] lifo= None curobj=(b4,block)
+ignore... ['M = Mandatory, O = Optional - Network Validated Rules may apply', None, None, None, None]
+name= swiftmsg
+name= b1
+name= b2
+name= b3
+name= f_113
+name= f_108
+name= b4
+name= seg_a
+name= f_15A
+name= f_20
+name= f_21
+name= f_22A
+name= f_94A
+name= f_22C
+name= f_17T
+name= f_17U
+name= f_17I
+name= f_82a
+name= f_87a
+name= f_83a
+name= f_77H
+name= f_77D
+name= f_14C
+name= f_17F
+name= f_17O
+name= f_32E
+name= f_30U
+name= seg_a0
+name= f_14S
+name= f_21A
+name= f_14E
+name= seg_b
+name= f_15B
+name= f_30T
+name= f_30V
+name= f_36
+name= f_39M
+name= seg_b0
+name= f_32B
+name= f_53a
+name= f_56a
+name= f_57a
+name= seg_b1
+name= f_33B
+name= f_53a
+name= f_56a
+name= f_57a
+name= f_58a
+name= seg_c
+name= f_15C
+name= f_29A
+name= f_24D
+name= f_84a
+name= f_85a
+name= f_88a
+name= f_71F
+name= f_26H
+name= f_21G
+name= f_72
+name= seg_d
+name= f_15D
+name= seg_d0
+name= f_17A
+name= f_32B
+name= f_53a
+name= f_56a
+name= f_57a
+name= f_58a
+name= f_16A
+name= seg_e
+name= f_15E
+name= seg_e0
+name= f_22L
+name= f_91a
+name= seg_e0a
+name= f_22M
+name= f_22N
+name= seg_e0a0
+name= f_22P
+name= f_22R
+name= f_81a
+name= f_89a
+name= f_96a
+name= seg_e1
+name= f_22S
+name= f_22T
+name= f_17E
+name= f_22U
+name= f_35B
+name= f_17H
+name= f_17P
+name= f_22V
+name= f_98D
+name= f_17W
+name= f_22W
+name= f_17Y
+name= f_17Z
+name= f_22Q
+name= f_17L
+name= f_17M
+name= f_17Q
+name= f_17S
+name= f_17X
+name= f_98G
+name= f_98H
+name= seg_e2
+name= f_34C
+name= f_77A
+name= seg_f
+name= f_15F
+name= f_21H
+name= f_21F
+name= f_30F
+name= f_32H
+name= f_33E
+name= b5
+name= f_CHK
+1!a3!n4!n6!n12!c4!n6!n6!n4!n1!a
+unpack block 1
+--------------------------------------
+======================================
+unpack block 1 finished
+unpack block 2
+--------------------------------------
+======================================
+unpack block 2 finished
+unpack block 3
+--------------------------------------
+unpack 999field 113 f_113
+unpack 999field 113 f_113 failed
+unpack 999field 108 f_108
+unpack 999field 108 f_108 finished
+======================================
+unpack block 3 finished
+unpack block 4
+--------------------------------------
+0 seg_a -----------------
+unpack segment seg_a repeat= False
+unpack 99field 15A f_15A
+unpack 99field 15A finished
+unpack 99field 20 f_20
+unpack 99field 20 finished
+unpack 99field 21 f_21
+unpack 99field 21 finished
+unpack 99field 22A f_22A
+unpack 99field 22A finished
+unpack 99field 94A f_94A
+unpack 99field 94A failed 1
+unpack 99field 22C f_22C
+unpack 99field 22C finished
+unpack 99field 17T f_17T
+unpack 99field 17T failed 1
+unpack 99field 17U f_17U
+unpack 99field 17U failed 1
+unpack 99field 17I f_17I
+unpack 99field 17I failed 1
+unpack 99field 82a f_82a
+unpack 99field 82a finished
+unpack 99field 87a f_87a
+unpack 99field 87a finished
+unpack 99field 83a f_83a
+unpack 99field 83a failed 5
+unpack 99field 77H f_77H
+unpack 99field 77H failed 1
+unpack 99field 77D f_77D
+unpack 99field 77D failed 1
+unpack 99field 14C f_14C
+unpack 99field 14C failed 1
+unpack 99field 17F f_17F
+unpack 99field 17F failed 1
+unpack 99field 17O f_17O
+unpack 99field 17O failed 1
+unpack 99field 32E f_32E
+unpack 99field 32E failed 1
+unpack 99field 30U f_30U
+unpack 99field 30U failed 1
+unpack segment seg_a0 repeat= True
+unpack 99field 14S f_14S
+unpack 99field 14S failed 1
+unpack segment seg_a0 failed
+unpack 99field 21A f_21A
+unpack 99field 21A failed 1
+unpack 99field 14E f_14E
+unpack 99field 14E failed 1
+unpack segment seg_a finished
+1 seg_b -----------------
+unpack segment seg_b repeat= False
+unpack 99field 15B f_15B
+unpack 99field 15B failed 1
+unpack segment seg_b failed
+e= unpack error,tag=15B,startword=:15B:,txt=:83A:A
+:77D:A
+:15B:
+:30T:20190506
+:30V:20190506
+:36:6,7817
+:32B:USD941300000,
+:53A:/8900300051
+IRVTUS3N
+:57A:/8900300051
+IRVTUS3N
+:33B:CNY67817000,
+:57A:PSBCCNBJ
+-}{5:{CHK:BE72688C124F}}
+unpack error,tag=15B,startword=:15B:,txt=:83A:A
+:77D:A
+:15B:
+:30T:20190506
+:30V:20190506
+:36:6,7817
+:32B:USD941300000,
+:53A:/8900300051
+IRVTUS3N
+:57A:/8900300051
+IRVTUS3N
+:33B:CNY67817000,
+:57A:PSBCCNBJ
+-}{5:{CHK:BE72688C124F}}
+None

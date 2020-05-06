@@ -1,0 +1,43 @@
+{
+	"b1":"",
+	"b2":"",
+	"b3":"",
+	"b4":{
+		"sa":{
+			"sa1":[
+				{
+					"t21":{
+						"relate_refer":"B"
+					},
+					"t22":{
+						"account":"This is loop1"
+					}
+				},
+				{
+					"t21":{
+						"relate_refer":"C"
+					},
+					"t22":{
+						"account":"Thisislo"
+					}
+				},
+				{
+					"t21":{
+						"relate_refer":"D"
+					},
+					"t22":{
+						"account":"Thisisloop3"
+					}
+				}
+			],
+			"d_agent":{
+				"agent_x":{
+				"bank":"ICBC",
+				"country":"CN",
+				"branch":"BJ"
+				}
+			}
+		}
+	},
+	"b5":""
+}

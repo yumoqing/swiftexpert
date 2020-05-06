@@ -1,0 +1,52 @@
+====data:../test/testdata1.json======
+===test data begin ===
+{'b1': '', 'b2': '', 'b3': '', 'b4': {'sa': {'t20': {'reference': 'A'}, 'sa1': [{'t21': {'relate_refer': 'B'}, 't22': {'account': 'This is loop1'}}, {'t21': {'relate_refer': 'C'}, 't22': {'account': 'Thisislo'}}, {'t21': {'relate_refer': 'D'}, 't22': {'account': 'Thisisloop3'}}], 'd_agent': {'agent_x': {'bank': 'ICBC', 'country': 'CN', 'branch': 'BJ'}}}}, 'b5': ''}
+===test data end ===
+===packed text begin===
+{1:}{2:}{3:}{4:
+:20:A
+:21:B
+:22:This is loop1
+:21:C
+:22:Thisislo
+:21:D
+:22:Thisisloop3
+:53A:ICBCCNBJ
+-}{5:}
+===packed text end===
+===unpacked data begin===
+{'b1': {}, 'b2': {}, 'b3': {}, 'b4': {'sa': {'t20': {'reference': 'A'}, 'sa1': [{'t21': {'relate_refer': 'B'}, 't22': {'account': 'This is loop1'}}, {'t21': {'relate_refer': 'C'}, 't22': {'account': 'Thisislo'}}, {'t21': {'relate_refer': 'D'}, 't22': {'account': 'Thisisloop3'}}], 'd_agent': {'agent_x': {'bank': 'ICBC', 'country': 'CN', 'branch': 'BJ'}}}}, 'b5': {}}
+===unpacked data end===
+====data:../test/testdata2.json======
+===test data begin ===
+{'b1': '', 'b2': '', 'b3': '', 'b4': {'sa': {'t20': {'reference': 'A'}}}, 'b5': ''}
+===test data end ===
+===packed text begin===
+{1:}{2:}{3:}{4:
+:20:A
+-}{5:}
+===packed text end===
+===unpacked data begin===
+{'b1': {}, 'b2': {}, 'b3': {}, 'b4': {'sa': {'t20': {'reference': 'A'}, 'sa1': [], 'd_agent': {'agent_x': {'bank': 'ICBC', 'country': 'CN', 'branch': 'BJ'}}}}, 'b5': {}}
+===unpacked data end===
+====data:../test/testdata3.json======
+===test data begin ===
+{'b1': '', 'b2': '', 'b3': '', 'b4': {'sa': {'t20': {'reference': 'A'}, 'sa1': [{'t21': {'relate_refer': 'B'}, 't22': {'account': 'This is loop1'}}, {'t21': {'relate_refer': 'C'}}, {'t21': {'relate_refer': 'D'}}]}}, 'b5': ''}
+===test data end ===
+===packed text begin===
+{1:}{2:}{3:}{4:
+:20:A
+:21:B
+:22:This is loop1
+:21:C
+:21:D
+-}{5:}
+===packed text end===
+===unpacked data begin===
+{'b1': {}, 'b2': {}, 'b3': {}, 'b4': {'sa': {'t20': {'reference': 'A'}, 'sa1': [{'t21': {'relate_refer': 'B'}, 't22': {'account': 'This is loop1'}}, {'t21': {'relate_refer': 'C'}, 't22': {'account': 'This is loop1'}}, {'t21': {'relate_refer': 'D'}, 't22': {'account': 'This is loop1'}}], 'd_agent': {'agent_x': {'bank': 'ICBC', 'country': 'CN', 'branch': 'BJ'}}}}, 'b5': {}}
+===unpacked data end===
+====data:../test/testdata4.json======
+===test data begin ===
+{'b1': '', 'b2': '', 'b3': '', 'b4': {'sa': {'sa1': [{'t21': {'relate_refer': 'B'}, 't22': {'account': 'This is loop1'}}, {'t21': {'relate_refer': 'C'}, 't22': {'account': 'Thisislo'}}, {'t21': {'relate_refer': 'D'}, 't22': {'account': 'Thisisloop3'}}], 'd_agent': {'agent_x': {'bank': 'ICBC', 'country': 'CN', 'branch': 'BJ'}}}}, 'b5': ''}
+===test data end ===
+error class(<class 'swift_field.SwiftXXField'>),name(t20) must present
